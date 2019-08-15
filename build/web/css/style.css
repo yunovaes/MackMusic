@@ -1,0 +1,324 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/02/2017, 10:49:09
+    Author     : 31519921
+*/
+
+@font-face {
+    font-family: ahaha;
+    src: url(Rajdhani-Bold.ttf);
+}
+
+*{
+    border: 0;
+    margin: 0;
+    paddin:0;
+    font-family: ahaha;
+}
+
+body,html {
+    height: 100%;
+    background-color: #ECEFF4;
+}
+
+.tudo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;   
+    border-bottom: 2px lightgray solid;    
+}
+.cadastro input[type="text"] {
+    background-color: #847AD1;           
+}
+.login input[type="text"] {
+    /*background-color: white;*/           
+}
+input[type="submit"] {    
+    margin: 0px auto;
+    padding: 10px 20px;
+}
+
+/*header {    background-color: #766BC1;    padding: 20px 15px;    color: white;}*/
+
+fieldset {
+    padding-top: 30px;    
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*Vertical*/
+    /*flex-flow: column wrap;*/
+}
+form {
+    width: 350px;  
+    box-shadow: 0px 0px 6px gray;
+}
+.cadastro {    
+    /*background-color: yellow;*/
+    background-color: #847AD1;
+    color: white;
+}
+.login {
+    background-color: white;
+}
+.botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+button {
+    padding: 10px;
+    background-color: #F76653;
+    border-radius: 100px;
+    color: #D15847;
+}
+
+.footerAtualizar {
+    padding-top: 30px;    
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*NAV BAR*/
+.navbar {    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #766BC1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    font-size: 25px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #F76653;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+/*HOME*/
+.tudo_home {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.home {
+    margin-top: 95px;    
+    border: none;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/ 
+    /*Vertical*/
+    /*flex-flow: column wrap;*/
+    width: 70%; 
+    height: 100%;
+    box-shadow: 0px 0px 6px gray;
+    padding: 20px;
+    background-color: #FFF9C9;
+}
+.home div {
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    text-align: center;
+}
+.home .bem_vindo {
+    /*background-color: green;*/
+}
+.home .post {
+    /*background-color: blue;*/    
+}
+
+/*PROFILE*/
+.profile {    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile fieldset {
+    background-color: #847AD1;
+    box-shadow: 0px 0px 6px gray;
+}
+
+/*Botoes do menu*/
+.hambur {
+    text-decoration: none;
+    color: #232323;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.hambur:hover {
+    color: #D15847;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2; 
+
+    -webkit-touch-callout: none;
+}
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+
+    -webkit-transform-origin: 4px 0px;
+
+    transform-origin: 4px 0px;
+
+    -webkit-transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menuToggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg) translate(0, -1px);
+}
+#menuhamb {
+    opacity:0;
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menuhamb li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+#menuToggle input:checked ~ ul {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+    opacity: 0.4;
+    height: 850%;
+}
+.profiletest {
+    border-radius: 30%;
+    width: 30%;
+    height: 30%;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+
+}
+.fotoperfil {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.nameProfile {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil2 {
+    background-color: #ECEFF4;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+
+/*ABOUT*/
+.about {    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*display: inline-block*/
+    /*float: left;*/ 
+}
+.about fieldset {
+    background-color: #847AD1;
+    box-shadow: 0px 0px 6px gray;
+    margin: 0px 2%;    
+}
+.about img {
+    margin-bottom: 20px;    
+}
